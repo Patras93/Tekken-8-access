@@ -2,7 +2,7 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.76-preview**.
+Aktualna wersja: **1.8.77-preview**.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -51,6 +51,8 @@ Zakres obejmuje między innymi:
 - historię: wybór rozdziału, poziom trudności, komunikaty, napisy, QTE i część ekranów po walce;
 - Arcade Quest, w tym część rozmów, zadań, list komend i liczników;
 - trening, listę komend, pomoc do komend i Combo Challenge;
+- bieżący krok Combo Challenge z dokładną komendą i opisem;
+- potwierdzone komunikaty walki: rozpoczęcie rundy, KO, Double KO, Time Up oraz aktywację Heat i Rage;
 - personalizację postaci, część sklepu, galerii i trybu fotograficznego;
 - część Tekken Ball oraz Ghost Battle;
 - przerwanie poprzedniej wypowiedzi i ograniczanie powtarzających się komunikatów.
@@ -61,7 +63,8 @@ Mod używa tekstu przekazywanego przez grę oraz dokładnie zweryfikowanych zdar
 
 - Nie każdy ekran i nie każda kontrolka zostały przetestowane podczas rzeczywistej rozgrywki.
 - Informacje zależne głównie od grafiki, ikon lub tekstur mogą pozostać nieme.
-- Część danych walki, takich jak stan zdrowia, czas, rundy, Heat i Rage, nie ma jeszcze kompletnego odczytu.
+- Komunikaty rozpoczęcia rundy, KO, Double KO, Time Up oraz aktywacji Heat i Rage są odczytywane, ale mod nie interpretuje nieopisanych argumentów jako numeru rundy ani strony gracza.
+- Bieżący stan zdrowia, zegar, licznik rund oraz wizualne paski Heat i Rage nie mają jeszcze kompletnego odczytu.
 - Frame Info w treningu oraz niektóre elementy Tekken Ball, Arcade Quest, sklepu i galerii mogą być odczytywane częściowo.
 - Niektóre ikony rangi, platformy i nagrody nie mają bezpiecznie potwierdzonego opisu tekstowego.
 - Mod jest związany z konkretnym buildem gry. Jeżeli weryfikacja kodu Polaris nie powiedzie się, dany moduł nie zostanie zainstalowany, aby uniknąć patchowania niewłaściwego miejsca.

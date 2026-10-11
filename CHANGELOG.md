@@ -2,6 +2,21 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; wpisy nie zawierają dat, ponieważ nie zostały one zapisane w źródłowym changelogu.
 
+## [1.8.77-preview]
+
+### Dodano
+
+- Dodano sześć semantycznie potwierdzonych zdarzeń walki: rozpoczęcie rundy, KO, Double KO, Time Up oraz aktywację Heat i Rage.
+- Combo Challenge korzysta teraz z czterech dokładnych wywołań `SetComboChallengeCommand` i trzech `CurrentCommand`, które przekazują ten sam natywny indeks.
+- Bieżący krok Combo Challenge jest bezpośrednio łączony z dokładną komendą i opisem dostarczonym przez grę.
+
+### Zabezpieczenia
+
+- Nieopisane parametry zdarzeń walki nie są interpretowane jako numer rundy ani strona gracza.
+- Siedem wywołań Combo Challenge ma weryfikację instrukcji i celu, wycofanie zmian po błędzie oraz deduplikację komunikatów.
+- Numeracja kroków nie jest zgadywana; mod używa wspólnego natywnego indeksu Polarisa.
+- Zachowano wszystkie kanały dostępności z wersji 1.8.76 i wcześniejszych.
+
 ## [1.8.76-preview]
 
 ### Dodano

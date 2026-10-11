@@ -2,6 +2,22 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; wpisy nie zawierają dat, ponieważ nie zostały one zapisane w źródłowym changelogu.
 
+## [1.8.80-preview] — 2026-10-11
+
+### Naprawiono
+
+- Odczyt nazw zaznaczonych duchów w Super walka duchów → Walcz przeciwko pobranym duchom. Działanie potwierdzono podczas nawigacji w grze z czytnikiem ekranu.
+- Rozpoznawanie właściwego ekranu Blueprint i jego zdarzenia OnButtonSelect; wcześniejsze wywołania dotyczyły innego selektora.
+- Konflikt podwójnego przejmowania Online ID, błędne sygnatury rekordów i SetGhostList oraz kopiowanie tekstu przed zwolnieniem bufora przez grę.
+- Odczyt po powrocie na ekran i kolejkę komunikatów podczas StopSpeaking.
+
+### Dodano
+
+- Czytnik zakładek serii i nazw utworów Jukeboxa.
+- Testy rozpoznawania zaznaczenia, czasu życia tekstu i wykonania relay z zachowaniem rejestrów oraz argumentów gry.
+
+Wersje 1.8.78 i 1.8.79 były lokalnymi etapami diagnostyki. Pozostałe ograniczenia dostępności gry nadal obowiązują.
+
 ## [1.8.77-preview]
 
 ### Dodano
@@ -195,5 +211,4 @@ W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ 
 - Osadzono dane wymagane przez mod i dodano obsługę późno tworzonych widżetów.
 - Dostosowano obsługę do Tekken 8 / Polaris 3.02.02 oraz rozwijano dokładny kanał interfejsu i zdarzenia głównego menu.
 - Zachowano sprawdzoną integrację NVDA/Tolk oraz weryfikację obsługiwanego buildu gry.
-
 

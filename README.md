@@ -2,7 +2,9 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.77-preview**.
+Aktualna wersja: **1.8.80-preview**.
+
+Wersja 1.8.80 naprawia odczyt nazw zaznaczonych duchów w **Super walka duchów → Walcz przeciwko pobranym duchom**. Działanie potwierdzono w grze z czytnikiem ekranu.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -14,7 +16,7 @@ Aktualna wersja: **1.8.77-preview**.
 - uruchomiony czytnik ekranu **NVDA**;
 - zgodna 64-bitowa biblioteka NVDA Controller Client umieszczona obok moda (`nvda64.dll`, `nvdaControllerClient.dll` albo `nvdaControllerClient64.dll`).
 
-Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Biblioteki klienta NVDA i Tolk nie są wbudowane w `dinput8.dll` i należy dostarczyć je osobno.
+Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Paczka wydania zawiera `nvdaControllerClient64.dll` i `Tolk.dll` obok `dinput8.dll`.
 
 ## Instalacja
 
@@ -26,8 +28,8 @@ Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Bibliot
    ```
 
 3. Jeśli znajduje się tam wcześniejszy `dinput8.dll`, utwórz jego kopię zapasową poza katalogiem gry.
-4. Skopiuj `release\dinput8.dll` z paczki wydania do powyższego katalogu.
-5. Umieść w tym samym katalogu zgodną bibliotekę NVDA Controller Client lub `Tolk.dll`.
+4. Skopiuj `dinput8.dll` z rozpakowanej paczki wydania do powyższego katalogu.
+5. Skopiuj do tego samego katalogu dołączone `nvdaControllerClient64.dll` i `Tolk.dll`.
 6. Uruchom NVDA, a następnie grę.
 
 Wydanie ma postać pojedynczego pliku moda. Nie wymaga osobnych plików `Tekken8Accessibility.dll`, `Tekken8UIReader.dll`, `Tekken8Accessibility.dat` ani `Tekken8Accessibility.ini`.
@@ -118,4 +120,3 @@ Testy statyczne i jednostkowe nie zastępują sprawdzenia w działającej grze z
 ## Bezpieczeństwo zmian
 
 Kod sprawdza oczekiwane bajty i cel każdego przechwytywanego wywołania przed zastosowaniem zmiany. Nie używa ogólnego skanowania obiektów Unreal Engine w czasie działania. Mimo tych zabezpieczeń jest to wersja preview: przechowuj kopię ostatniego działającego `dinput8.dll` i po każdej aktualizacji gry sprawdzaj logi przed dalszym testowaniem.
-

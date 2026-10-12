@@ -1,6 +1,24 @@
 # Changelog
 
-W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; wpisy nie zawierają dat, ponieważ nie zostały one zapisane w źródłowym changelogu.
+W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
+
+## [1.8.87-preview] — 2026-10-12
+
+### Dodano i naprawiono od wersji 1.8.80
+
+- Odczyt regionu zaznaczonego kursorem w oknie „Wybierz region”, również podczas nawigacji klawiaturą lub padem. Działanie potwierdzono w grze.
+- Odczyt pozycji list rankingowych podczas ruchu kursora oraz kategorii i wartości filtrów. Dodano obsługę osobnego panelu wyboru postaci.
+- Odczyt opcji profilu gracza, w tym „Pobierz ducha”, oraz nazwy i postaci zaznaczonego ducha udostępnionego przez gracza. Działanie profilu i listy duchów potwierdzono w grze.
+- Poprawiono kolejność odczytu menu „Stwórz sesję” / „Wyszukaj”, aby natywna obsługa zaznaczenia nie kasowała nowego komunikatu.
+- Dodano odczyt zakładek znajomych, rywali i śledzących, zaznaczonego gracza, dostępnej nazwy salonu oraz komunikatów pustej listy i ładowania.
+- Poprawiono późne nadejście etykiet, ponowne otwieranie okien, powrót z dialogów wewnętrznych oraz czyszczenie starych nazw po odświeżeniu.
+- Zwiększono pojemność list wartości dialogów z 32 do 128 i przeniesiono odczyt po natywnych wywołaniach, które mogą przerywać mowę.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja x64, testy tekstu, rankingów, profilu, list duchów, salonów i regionów przeszły. Testy obejmują przekazywanie argumentów gry oraz wykonanie kodu przekaźników.
+- Wersje 1.8.81–1.8.86 były lokalnymi etapami napraw. Wydanie 1.8.87 zawiera te zmiany.
+- Mod nadal nie zapewnia pełnej dostępności całej gry. Część ekranów wymaga dalszych testów; zgodność zweryfikowano dla Polaris 3.02.02.
 
 ## [1.8.80-preview] — 2026-10-11
 

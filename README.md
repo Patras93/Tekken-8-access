@@ -2,9 +2,11 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.80-preview**.
+Aktualna wersja: **1.8.87-preview**.
 
-Wersja 1.8.80 naprawia odczyt nazw zaznaczonych duchów w **Super walka duchów → Walcz przeciwko pobranym duchom**. Działanie potwierdzono w grze z czytnikiem ekranu.
+[Pobierz paczkę 1.8.87](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.87/Tekken8Access_v1.8.87-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.87).
+
+Wersja 1.8.87 dodaje odczyt regionu pod kursorem w oknie **Wybierz region**. Odczyt potwierdzono w grze. Zawiera także poprawki nawigacji rankingów, filtrów postaci, opcji profilu gracza, list duchów, menu sesji online oraz list znajomych, rywali i śledzących. Zakres tych ekranów nadal może być częściowy.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.

@@ -2,6 +2,22 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.95-preview] — 2026-10-13
+
+### Naprawiono
+
+- Odczyt „Stwórz sesję” i „Wyszukaj sesje” podczas przesuwania kursora. Działanie obu opcji potwierdzono w grze z NVDA.
+- Przy wyborze tych dwóch pozycji używany jest indeks lokalny grupy. Poprzedni odczyt błędnie dodawał przesunięcie wizualne 3, szukając nieistniejących pozycji 3/4 zamiast 0/1.
+- Zdarzenia innych poziomów menu nie kasują już oczekującej nazwy zaznaczonej opcji. Wewnętrzne ekrany sesji pozostają bez zmian.
+- Zachowano tekst zaznaczonej opcji w osobnej kolejce, obsługując szybki ruch kursora, natywne zatrzymanie mowy i zwolnienie danych przez grę.
+- Uwzględniono lokalną wersję 1.8.93: osobny odczyt zaznaczonych ustawień i ich podmenu oraz ochronę przed nadpisaniem przez komunikaty pomocy.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja x64, testy tekstu i regresja wyboru sesji przeszły bez błędów. Regresja obejmuje rzeczywisty callback wyboru grupy z dwoma wpisami i przesunięciem 3, obie pary kluczy etykiet oraz callbacki innych poziomów.
+- Wersje 1.8.93–1.8.94 były lokalnymi etapami napraw; 1.8.94 nie rozwiązała odczytu tych dwóch opcji. Wydanie 1.8.95 zawiera skuteczną poprawkę potwierdzoną przez użytkownika.
+- Mod nadal ma częściowe pokrycie ekranów. Obsługiwany build: Polaris 3.02.02.
+
 ## [1.8.92-preview] — 2026-10-13
 
 ### Naprawiono

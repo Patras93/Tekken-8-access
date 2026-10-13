@@ -2,11 +2,11 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.95-preview**.
+Aktualna wersja: **1.8.96-preview**.
 
-[Pobierz paczkę 1.8.95](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.95/Tekken8Access_v1.8.95-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.95).
+[Pobierz paczkę 1.8.96](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.96/Tekken8Access_v1.8.96-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.96).
 
-Wersja 1.8.95 naprawia odczyt zaznaczonych opcji „Stwórz sesję” i „Wyszukaj sesje”. Działanie obu opcji potwierdzono w grze z NVDA. Wnętrza ekranów sesji zachowują dotychczasowy odczyt. Wydanie zawiera też osobną kolejkę zaznaczonych ustawień z lokalnej wersji 1.8.93 oraz wcześniejsze poprawki nicków w rankingach.
+Wersja 1.8.96 naprawia odczyt zaznaczonych pozycji listy na ekranie „Pobrany duch”. Działanie potwierdzono w grze z NVDA. Odczyt pobiera rzeczywistą nazwę i dostępną postać z zaznaczonego wiersza także wtedy, gdy lokalna lista pomija zdarzenia ustawiania nazwy. Wydanie zawiera wcześniejszą poprawkę opcji „Stwórz sesję” i „Wyszukaj sesje”.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -121,4 +121,4 @@ Testy statyczne i jednostkowe nie zastępują sprawdzenia w działającej grze z
 
 ## Bezpieczeństwo zmian
 
-Kod sprawdza oczekiwane bajty i cel każdego przechwytywanego wywołania przed zastosowaniem zmiany. Nie używa ogólnego skanowania obiektów Unreal Engine w czasie działania. Mimo tych zabezpieczeń jest to wersja preview: przechowuj kopię ostatniego działającego `dinput8.dll` i po każdej aktualizacji gry sprawdzaj logi przed dalszym testowaniem.
+Kod sprawdza oczekiwane bajty i cel każdego przechwytywanego wywołania przed zastosowaniem zmiany. Nie używa ogólnego skanowania obiektów Unreal Engine w czasie działania. Dla lokalnej listy duchów sprawdza ograniczoną listę funkcji wyłącznie zweryfikowanej klasy zaznaczonego wiersza, aby rozpoznać dokładny skrypt przypisujący nazwę i postać. Mimo tych zabezpieczeń jest to wersja preview: przechowuj kopię ostatniego działającego `dinput8.dll` i po każdej aktualizacji gry sprawdzaj logi przed dalszym testowaniem.

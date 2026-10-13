@@ -2,6 +2,21 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.92-preview] — 2026-10-13
+
+### Naprawiono
+
+- W rankingach odczytywany jest właściwy nick gracza zamiast długiego identyfikatora konta. Pozycja i liczba wyników pozostają w komunikacie, np. „1 of 10000”.
+- Zachowano prawdziwe nicki liczbowe i dosłowny tekst nazw. Brak nicku nie powoduje odczytu identyfikatora konta.
+- Zachowano odczyt przy ruchu kursora, zmianie strony i późnym nadejściu danych; nazwa jest kopiowana przed zwolnieniem bufora gry.
+- Uwzględniono poprawki z lokalnych wersji 1.8.88–1.8.91: właściwe zdarzenie tekstu wyboru regionu, odczyt zaznaczonego salonu, nazwy sesji i gospodarza na liście „Wyszukaj sesję” oraz odczyt ustawień po natywnym przerwaniu mowy.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja x64, testy tekstu i testy rankingów przeszły bez błędów. Testy rozróżniają nick od identyfikatorów, obejmują strony, późne dane, przerwanie mowy i zwolnienie bufora.
+- Odczyt nicków w tej wersji wymaga jeszcze potwierdzenia podczas gry z NVDA. Mod nadal nie zapewnia kompletnej dostępności wszystkich ekranów; obsługiwany build: Polaris 3.02.02.
+- Wcześniejszy opis wydania 1.8.87 przedwcześnie uznawał odczyt regionów za potwierdzony. Późniejsze zgłoszenia wykazały brak odczytu; poprawiono go w lokalnej wersji 1.8.89, zawartej w tej paczce.
+
 ## [1.8.87-preview] — 2026-10-12
 
 ### Dodano i naprawiono od wersji 1.8.80

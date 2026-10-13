@@ -2,6 +2,21 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.96-preview] — 2026-10-13
+
+### Naprawiono
+
+- Odczyt zaznaczonych pozycji na ekranie „Pobrany duch”. Działanie listy potwierdzono w grze z NVDA.
+- Lokalna lista przypisuje nazwę i postać bezpośrednio, omijając obserwowane wcześniej zdarzenia. Mod rozpoznaje teraz dokładny skrypt tych przypisań w zweryfikowanej klasie zaznaczonego wiersza.
+- Odczyt korzysta z rzeczywistej nazwy i dostępnej postaci tego wiersza. Puste lub niedostępne dane nie są zastępowane identyfikatorem ani starym wpisem z innej listy.
+- Zachowano wcześniejsze poprawki menu sesji, ustawień, rankingów i list duchów w profilach graczy.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja x64, testy tekstu i nowa regresja lokalnej listy duchów przeszły bez błędów. Test odtwarza rzeczywisty callback fokusu bez wcześniejszych zdarzeń ustawiania nazwy i sprawdza właścicieli, puste dane, zwolnienie bufora oraz zatrzymanie mowy.
+- Układ ramki i funkcji potwierdzono w kodzie obsługiwanego builda gry. Rozpoznawanie ogranicza się do bieżącej klasy wiersza i dokładnego skryptu, z kontrolą właściciela, limitu i cykli.
+- Mod nadal ma częściowe pokrycie ekranów. Obsługiwany build: Polaris 3.02.02.
+
 ## [1.8.95-preview] — 2026-10-13
 
 ### Naprawiono

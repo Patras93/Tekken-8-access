@@ -2,6 +2,26 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.98-preview] — 2026-10-16
+
+### Naprawiono
+
+- Gubienie nicków podczas szybkiego przewijania rankingów. Działanie poprawki potwierdzono w grze z NVDA.
+- Kolejne strony rankingu uzupełniają pamięć wpisów zamiast kasować wcześniej pobrane nicki. Dane są przechowywane według bezwzględnej pozycji, z limitem 512 wierszy.
+- Odczyt wybiera ostatnio zaznaczonego gracza po krótkim ustabilizowaniu kursora. Spóźniona odpowiedź innej strony nie zastępuje nicku samym numerem pozycji.
+- Spóźnione dane rankingu nie zagłuszają otwartego filtra. Powrót z filtra na tę samą pozycję ponownie odczytuje aktualny wpis.
+- Zachowano rzeczywiste nicki liczbowe i dosłowny tekst nazw; identyfikator konta nie zastępuje brakującego nicku.
+
+### Dodano od wersji 1.8.96
+
+- Obsługę listy rywali w oknie „Walcz z kolejnym rywalem”, otwieranym po walce z duchem. Lokalna wersja 1.8.97 dodała odczyt rzeczywistej nazwy oraz dostępnej postaci zaznaczonego wiersza CPUlist, używanego też dla pobranych duchów. Ta osobna zmiana przeszła testy automatyczne; potwierdzenie działania w grze pozostaje do sprawdzenia.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja x64, testy tekstu, rankingów i pełnej ścieżki kolejki z atrapą czytnika przeszły bez błędów. Testy obejmują szybki ruch kursora, spóźnione strony, zatrzymanie mowy, puste nazwy, filtry i powrót do listy.
+- Zmiana właściciela, wyczyszczenie listy i zmiana filtra unieważniają stare dane. Nie są odczytywane nicki z poprzedniej listy.
+- Mod nadal ma częściowe pokrycie ekranów. Obsługiwany build: Polaris 3.02.02.
+
 ## [1.8.96-preview] — 2026-10-13
 
 ### Naprawiono

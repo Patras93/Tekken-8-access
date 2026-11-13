@@ -2,6 +2,29 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.101-preview] — 2026-11-13
+
+### Zgodność z nową wersją gry
+
+- Dostosowano mod do **Steam build 26155785**. Obsługiwany EXE ma PE timestamp `0x6ADB1AD5` i SizeOfImage `0x0A79B000`.
+- Przeniesiono przechwycenia zdarzeń menu, ustawień, walki, rankingów, duchów, sesji, fabuły i pozostałych wcześniej obsługiwanych kanałów na nowe adresy.
+- Osobno sprawdzono funkcje konwersji tekstu, konstruktory FName, nazwy postaci i aren, dane pobranych duchów, napisy oraz sposób przekazywania FFrame do wspólnych przekaźników.
+- Rankingi korzystają teraz z 8 aktualnych wywołań kursora i 2 zdarzeń rzeczywistego czyszczenia listy. Zachowano przyrostowe strony i odczyt pola Name zamiast identyfikatora konta.
+- Zaktualizowano zmienione skrypty wierszy salonów, znajomych oraz zakładek menu salonu. Pozostałe sprawdzone skrypty duchów, pauzy i listy sesji zachowały poprzedni układ.
+- Zachowano kontrolę buildu oraz weryfikację bajtów i celu każdego przechwytywanego wywołania. Nie pominięto zabezpieczeń, aby wymusić uruchomienie starej mapy.
+
+### Zmiany od ostatniego publicznego wydania
+
+- Dołączono wspólny odczyt tytułu i podtytułu zaznaczonych przycisków pauzy z lokalnej wersji 1.8.99 oraz obsługę etykiet zakładek salonu z prac nad 1.8.100. Nie oznacza to pełnego odczytu wszystkich elementów wewnątrz zakładek salonu.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja DLL x64 i kontrola eksportów przeszły.
+- Test instalacji na prywatnej kopii nowego EXE: **68 grup, 0 błędów**. Nie wykonuje funkcji gry i nie zastępuje testu rozgrywki.
+- **24 zestawy regresji oraz testy tekstu** przeszły bez błędów. Obejmują ustawienia, pauzę, ranking, duchy, profile, regiony, salony i sesje.
+- Gra uruchomiła się z nowym modem; rzeczywisty log potwierdził obsługiwany build, instalację kanałów bez błędów, backend NVDA oraz zdarzenia nawigacji menu i dialogów.
+- Nie sprawdzono w rozgrywce każdego ekranu, trybu i komunikatu NVDA. Mod pozostaje wersją preview o częściowym pokryciu interfejsu. Niezweryfikowane elementy i nowe teksty aktualizacji mogą wymagać dalszych poprawek.
+
 ## [1.8.98-preview] — 2026-10-16
 
 ### Naprawiono

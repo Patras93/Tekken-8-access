@@ -2,11 +2,11 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.98-preview**.
+Aktualna wersja: **1.8.101-preview**.
 
-[Pobierz paczkę 1.8.98](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.98/Tekken8Access_v1.8.98-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.98).
+[Pobierz paczkę 1.8.101](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.101/Tekken8Access_v1.8.101-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.101).
 
-Wersja 1.8.98 naprawia gubienie nicków graczy podczas szybkiego przewijania rankingów. Działanie potwierdzono w grze z NVDA. Mod zachowuje dane wcześniejszych stron i odczytuje aktualnie zaznaczonego gracza; spóźniona odpowiedź nie zastępuje nicku samą pozycją. Wydanie zawiera również obsługę listy rywali w oknie „Walcz z kolejnym rywalem” z lokalnej wersji 1.8.97.
+Wersja 1.8.101 dostosowuje mod do aktualizacji Tekken 8: Steam build 26155785. Zaktualizowano adresy przechwyceń, funkcje pomocnicze oraz zmienione skrypty interfejsu salonu. Przeszły testy instalacji 68 grup przechwyceń i 24 zestawy regresji oraz testy tekstu. Uruchomienie gry, inicjalizację moda i zdarzenia menu potwierdzono logami; pełny odczyt wszystkich trybów z NVDA nie został potwierdzony.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -14,11 +14,19 @@ Wersja 1.8.98 naprawia gubienie nicków graczy podczas szybkiego przewijania ran
 ## Wymagania
 
 - Windows 64-bit;
-- Tekken 8 — zweryfikowany build **Polaris 3.02.02**;
+- Tekken 8 ze Steam — build **26155785** (aktualizacja z 12 listopada 2026);
 - uruchomiony czytnik ekranu **NVDA**;
 - zgodna 64-bitowa biblioteka NVDA Controller Client umieszczona obok moda (`nvda64.dll`, `nvdaControllerClient.dll` albo `nvdaControllerClient64.dll`).
 
 Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Paczka wydania zawiera `nvdaControllerClient64.dll` i `Tolk.dll` obok `dinput8.dll`.
+
+### Obsługiwany plik gry
+
+- Steam build: `26155785`.
+- PE timestamp: `0x6ADB1AD5`; SizeOfImage: `0x0A79B000`.
+- SHA-256 `Polaris-Win64-Shipping.exe`: `C98E1021FBEC3417264E753086D228163E7F95F0A1D2A1271B4875888A850EAC`.
+
+Wydanie 1.8.101 jest przeznaczone dla powyższego buildu. Starsze wydania moda mają inne adresy przechwyceń i nie obsługują tej aktualizacji. Mod nadal sprawdza tożsamość buildu oraz bajty i cele poszczególnych wywołań; nie wyłączono zabezpieczeń zgodności.
 
 ## Instalacja
 
@@ -72,7 +80,7 @@ Mod używa tekstu przekazywanego przez grę oraz dokładnie zweryfikowanych zdar
 - Frame Info w treningu oraz niektóre elementy Tekken Ball, Arcade Quest, sklepu i galerii mogą być odczytywane częściowo.
 - Niektóre ikony rangi, platformy i nagrody nie mają bezpiecznie potwierdzonego opisu tekstowego.
 - Mod jest związany z konkretnym buildem gry. Jeżeli weryfikacja kodu Polaris nie powiedzie się, dany moduł nie zostanie zainstalowany, aby uniknąć patchowania niewłaściwego miejsca.
-- Teksty pochodzą z gry, więc ich język zależy od ustawień Tekken 8 i dostępnej tabeli lokalizacji.
+- Teksty pochodzą z gry, więc ich język zależy od ustawień Tekken 8 i dostępnej tabeli lokalizacji. Nowe teksty dodane przez grę mogą wymagać uzupełnienia tej tabeli.
 
 Szczegółowe notatki techniczne znajdują się w plikach `*_COVERAGE_*.txt`, `*_STATIC_MAP.txt` oraz w `CHANGELOG_PL.txt`.
 

@@ -2,6 +2,23 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.102-preview] — 2026-11-21
+
+### Zgodność z aktualizacją gry
+
+- Dostosowano mapę natywnych wywołań do **Steam build 26651490**. Nowy EXE: timestamp `0x6AF749A0`, SizeOfImage `0x0A79B000`.
+- Adresy przeniesiono na podstawie porównania zachowanej kopii poprzedniego EXE z nowym plikiem, z kontrolą instrukcji i celów wywołań. Nie wyłączono kontroli zgodności.
+- Dwa wywołania inicjalizacji ustawień wymagały osobnego dopasowania, ponieważ zmienił się kod funkcji i przydział rejestrów. Zachowano przekazywanie flagi Setup oraz tekstu informacji o wersji.
+- Porównano 117 dotychczas sprawdzanych assetów interfejsu (234 pliki) oraz scriptobjects.bin: pozostały identyczne bajtowo, więc fingerprinty tych skryptów zachowano.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja DLL x64 i kontrola eksportów przeszły.
+- Test instalacji na prywatnej, nieuruchomionej kopii nowego EXE: **68 grup, 0 błędów**.
+- **24 zestawy regresji i testy tekstu: 0 błędów** po przebudowaniu z nową mapą.
+- Gra uruchomiła mod; rzeczywisty log potwierdził nowy build, instalację kanałów bez błędów i backend NVDA.
+- To wydanie preview. Nie sprawdzono w rozgrywce wszystkich ekranów i trybów. Zakres dostępności pozostaje częściowy, zgodnie z ograniczeniami poprzedniego wydania.
+
 ## [1.8.101-preview] — 2026-11-13
 
 ### Zgodność z nową wersją gry

@@ -2,11 +2,11 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.101-preview**.
+Aktualna wersja: **1.8.102-preview**.
 
-[Pobierz paczkę 1.8.101](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.101/Tekken8Access_v1.8.101-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.101).
+[Pobierz paczkę 1.8.102](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.102/Tekken8Access_v1.8.102-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.102).
 
-Wersja 1.8.101 dostosowuje mod do aktualizacji Tekken 8: Steam build 26155785. Zaktualizowano adresy przechwyceń, funkcje pomocnicze oraz zmienione skrypty interfejsu salonu. Przeszły testy instalacji 68 grup przechwyceń i 24 zestawy regresji oraz testy tekstu. Uruchomienie gry, inicjalizację moda i zdarzenia menu potwierdzono logami; pełny odczyt wszystkich trybów z NVDA nie został potwierdzony.
+Wersja 1.8.102 dostosowuje mod do Steam build 26651490. Zaktualizowano mapę wywołań oraz dwa zmienione wywołania inicjalizacji ustawień. Przeszły testy instalacji 68 grup przechwyceń, 24 zestawy regresji i testy tekstu. Uruchomienie moda z grą i aktywny backend NVDA potwierdzono logami. Nie potwierdzono pełnego odczytu każdego trybu podczas rozgrywki.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -14,7 +14,7 @@ Wersja 1.8.101 dostosowuje mod do aktualizacji Tekken 8: Steam build 26155785. Z
 ## Wymagania
 
 - Windows 64-bit;
-- Tekken 8 ze Steam — build **26155785** (aktualizacja z 12 listopada 2026);
+- Tekken 8 ze Steam — build **26651490**;
 - uruchomiony czytnik ekranu **NVDA**;
 - zgodna 64-bitowa biblioteka NVDA Controller Client umieszczona obok moda (`nvda64.dll`, `nvdaControllerClient.dll` albo `nvdaControllerClient64.dll`).
 
@@ -22,11 +22,11 @@ Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Paczka 
 
 ### Obsługiwany plik gry
 
-- Steam build: `26155785`.
-- PE timestamp: `0x6ADB1AD5`; SizeOfImage: `0x0A79B000`.
-- SHA-256 `Polaris-Win64-Shipping.exe`: `C98E1021FBEC3417264E753086D228163E7F95F0A1D2A1271B4875888A850EAC`.
+- Steam build: `26651490`.
+- PE timestamp: `0x6AF749A0`; SizeOfImage: `0x0A79B000`.
+- SHA-256 `Polaris-Win64-Shipping.exe`: `B1B39950FB7C8CFFA60FD8F51D4BD087D561BB78258E530106F884BB69A6456E`.
 
-Wydanie 1.8.101 jest przeznaczone dla powyższego buildu. Starsze wydania moda mają inne adresy przechwyceń i nie obsługują tej aktualizacji. Mod nadal sprawdza tożsamość buildu oraz bajty i cele poszczególnych wywołań; nie wyłączono zabezpieczeń zgodności.
+Wydanie 1.8.102 jest przeznaczone dla powyższego buildu. Starsze wydania moda mają inne adresy przechwyceń i nie obsługują tej aktualizacji. Mod nadal sprawdza tożsamość buildu oraz bajty i cele poszczególnych wywołań; nie wyłączono zabezpieczeń zgodności.
 
 ## Instalacja
 

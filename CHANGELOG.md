@@ -2,6 +2,22 @@
 
 W tym pliku opisano najważniejsze zmiany w projekcie **Tekken8Access**. Układ jest oparty na formacie [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/). Projekt używa numeracji wersji zgodnej z dotychczasowymi wydaniami moda; starsze wpisy bez dat zachowują informacje zapisane w źródłowym changelogu.
 
+## [1.8.103-preview] — 2026-11-26
+
+### Historia czatu i wyszukiwanie graczy
+
+- Dodano odczyt zaznaczonej wiadomości w historii czatu otwieranej przyciskiem X w pokoju walki z graczem.
+- Dodano odczyt okna wyników wyszukiwania graczy w społeczności i zaznaczonych nicków, również gdy nazwa pojawia się z opóźnieniem.
+- Komunikat o pustych wynikach jest odczytywany tylko wtedy, gdy jest widoczny. Identyfikatory kont nie zastępują nicków.
+- Poprawiono anulowanie nieaktualnych komunikatów podczas szybkiego przesuwania i ponownego otwierania list.
+
+### Weryfikacja i ograniczenia
+
+- Kompilacja DLL x64, kontrola eksportów, testy tekstu, 24 zestawy regresji oraz cztery nowe zestawy testów przeszły.
+- Test instalacji na prywatnej, nieuruchomionej kopii EXE: 71 grup, 0 błędów.
+- Testy nowych ekranów wykorzystują dane i układy pochodzące z assetów gry; nie zastępują sprawdzenia działającej gry z NVDA. Takie potwierdzenie pozostaje do wykonania.
+- Zachowano zgodność ze Steam build 26651490. Dostępność całej gry nadal jest częściowa.
+
 ## [1.8.102-preview] — 2026-11-21
 
 ### Zgodność z aktualizacją gry

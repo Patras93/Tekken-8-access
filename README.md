@@ -2,11 +2,11 @@
 
 Tekken8Access to eksperymentalny mod dostępności dla **Tekken 8**, który przekazuje tekst i wybrane informacje interfejsu do czytnika ekranu. Projekt skupia się przede wszystkim na menu, konfiguracji trybów, listach, dialogach i komunikatach gry.
 
-Aktualna wersja: **1.8.102-preview**.
+Aktualna wersja: **1.8.103-preview**.
 
-[Pobierz paczkę 1.8.102](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.102/Tekken8Access_v1.8.102-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.102).
+[Pobierz paczkę 1.8.103](https://github.com/Patras93/Tekken-8-access/releases/download/v1.8.103/Tekken8Access_v1.8.103-preview-release.zip) · [Opis wydania](https://github.com/Patras93/Tekken-8-access/releases/tag/v1.8.103).
 
-Wersja 1.8.102 dostosowuje mod do Steam build 26651490. Zaktualizowano mapę wywołań oraz dwa zmienione wywołania inicjalizacji ustawień. Przeszły testy instalacji 68 grup przechwyceń, 24 zestawy regresji i testy tekstu. Uruchomienie moda z grą i aktywny backend NVDA potwierdzono logami. Nie potwierdzono pełnego odczytu każdego trybu podczas rozgrywki.
+Wersja 1.8.103 dodaje odczyt zaznaczonych wiadomości historii czatu otwieranej przyciskiem X w pokoju oraz okna wyników i nicków po wyszukiwaniu graczy w społeczności. Kompilacja i testy przeszły; działanie nowych ekranów z NVDA wymaga jeszcze potwierdzenia w grze.
 
 > [!IMPORTANT]
 > Mod nie zapewnia jeszcze pełnej dostępności całej gry. Obsługa poszczególnych ekranów może być częściowa, a po aktualizacji Tekken 8 wymagane może być dostosowanie punktów integracji.
@@ -26,7 +26,7 @@ Mod potrafi również użyć `Tolk.dll` jako zapasowego mechanizmu mowy. Paczka 
 - PE timestamp: `0x6AF749A0`; SizeOfImage: `0x0A79B000`.
 - SHA-256 `Polaris-Win64-Shipping.exe`: `B1B39950FB7C8CFFA60FD8F51D4BD087D561BB78258E530106F884BB69A6456E`.
 
-Wydanie 1.8.102 jest przeznaczone dla powyższego buildu. Starsze wydania moda mają inne adresy przechwyceń i nie obsługują tej aktualizacji. Mod nadal sprawdza tożsamość buildu oraz bajty i cele poszczególnych wywołań; nie wyłączono zabezpieczeń zgodności.
+Wydanie 1.8.103 jest przeznaczone dla powyższego buildu. Starsze wydania moda mają inne adresy przechwyceń i nie obsługują tej aktualizacji. Mod nadal sprawdza tożsamość buildu oraz bajty i cele poszczególnych wywołań; nie wyłączono zabezpieczeń zgodności.
 
 ## Instalacja
 
